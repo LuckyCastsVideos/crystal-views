@@ -8,12 +8,12 @@ source script/helpers/text_helpers
 
 NEW_APP_NAME=$1
 
-notice "Renaming 'src/my_app.cr'"
-mv src/my_app.cr src/$NEW_APP_NAME.cr
+notice "Renaming 'src/crystal_views.cr'"
+mv src/crystal_views.cr src/$NEW_APP_NAME.cr
 print_done
 
 notice "Installing node dependencies"
-rg my_app -l | xargs sed -i "" "s/my_app/$NEW_APP_NAME/g"
+rg crystal_views -l | xargs sed -i "" "s/crystal_views/$NEW_APP_NAME/g"
 print_done
 
 notice "Committing changes to git"

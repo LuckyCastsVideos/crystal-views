@@ -7,9 +7,9 @@ This is a template project for web applications using [Lucky](https://luckyframe
 ### How to use it?
 
 - Click [this link](https://github.com/stephendolan/lucky_jumpstart/generate)
-- Replace every instance of `my_app` with your application name, for example:
-  - `mv src/my_app.cr src/your_app.cr`
-  - `rg my_app -l | xargs sed -i '' 's/my_app/your_app/g'`
+- Replace every instance of `crystal_views` with your application name, for example:
+  - `mv src/crystal_views.cr src/your_app.cr`
+  - `rg crystal_views -l | xargs sed -i '' 's/crystal_views/your_app/g'`
   - You can also simply run `./script/rename_template_app your_app`
 - Run `./script/setup`
 - Run `docker-compose up`

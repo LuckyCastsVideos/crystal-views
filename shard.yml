@@ -1,12 +1,12 @@
-name: my_app
+name: crystal_views
 version: 0.1.0
 
 authors:
   - your-name-here <your-email-here>
 
 targets:
-  my_app:
-    main: src/my_app.cr
+  crystal_views:
+    main: src/crystal_views.cr
 
 crystal: 0.35.0
 

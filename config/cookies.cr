@@ -1,7 +1,7 @@
 require "./server"
 
 Lucky::Session.configure do |settings|
-  settings.key = "_my_app_session"
+  settings.key = "_crystal_views_session"
 end
 
 Lucky::CookieJar.configure do |settings|
