@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+<%= for book <- books do %>
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.content %></td>
+    <td><%= link("Show", to: "/books/#{book.id}") %></td>
+    <td><%= link("Edit", to: "/books/#{book.id}/edit") %></td>
+    <td><%= link("Delete", to: "/books/#{book.id}", method: :delete) %></td>
+  </tr>
+<% end %>
+  </tbody>
+</table>
