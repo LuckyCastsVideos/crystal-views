@@ -15,18 +15,9 @@ class Books::IndexPage < MainLayout
         books.each do |book|
           td book.title
           td book.content
-
-          td do
-            link to: Books::Show
-          end
-
-          td do
-            link to: Books::Edit.with(book)
-          end
-
-          td do
-            link to: Books::Destroy.with(book), data_confirm: "Are you sure?"
-          end
+          td { link to: Books::Show }
+          td { link to: Books::Edit.with(book) }
+          td { link to: Books::Destroy.with(book), data_confirm: "Are you sure?" }
         end
       end
     end
