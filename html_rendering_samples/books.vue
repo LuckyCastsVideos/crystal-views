@@ -12,9 +12,9 @@
       <tr v-for="book in books">
         <td>{{ book.title }}</td>
         <td>{{ book.content }}</td>
-        <td><router-link :to="{ path: 'book', params: { bookId: book.id }">Show</router-link></td>
-        <td><router-link :to="{ path: 'bookEdit', params: { bookId: book.id }">Edit</router-link></td>
-        <td><router-link :to="{ path: 'bookDelete', params: { bookId: book.id }">Delete</router-link></td>
+        <td><router-link :to="{ name: 'book', params: { bookId: book.id } }">Show</router-link></td>
+        <td><router-link :to="{ name: 'bookEdit', params: { bookId: book.id } }">Edit</router-link></td>
+        <td><router-link :to="{ name: 'bookDelete', params: { bookId: book.id } }">Delete</router-link></td>
       </tr>
     </tbody>
   </table>
