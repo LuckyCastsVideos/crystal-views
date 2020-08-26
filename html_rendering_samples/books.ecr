@@ -14,7 +14,7 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.content %></td>
-        <td><%= link "Show", to: Books::Show.with(book) %></td>
+        <td><%= link "Show",                              to: Books::Show.with(book) %></td>
         <td><%= link "Edit", to: Books::Edit.with(book) %></td>
         <td><%= link "Destroy", to: Books::Destroy.with(book), data_confirm: "Are you sure?" %></td>
       </tr>

@@ -11,14 +11,18 @@ class Books::IndexPage < MainLayout
         th colspan: 3
       end
 
-      tbody do
-        books.each do |book|
-          td book.title
-          td book.content
-          td { link to: Books::Show }
-          td { link to: Books::Edit.with(book) }
-          td { link to: Books::Destroy.with(book), data_confirm: "Are you sure?" }
-        end
+      render_body
+    end
+  end
+
+  private def render_body
+    tbody do
+      books.each do |book|
+        td book.title
+        td book.content
+        td { link to: Books::Show }
+        td { link to: Books::Edit.with(book) }
+        td { link to: Books::Destroy.with(book), data_confirm: "Are you sure?" }
       end
     end
   end
